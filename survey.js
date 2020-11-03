@@ -18,7 +18,7 @@ rl.question(`\nOh hey, what's your name? `, (answer) => {
       console.log(`There's nothing like ${answer} to set the mood huh?\n`);
       answers["Music"] = answer;
 
-      rl.question(`What's your favourite thing to eat for that meal? `, (answer) => {
+      rl.question(`What's your favourite meal? `, (answer) => {
         console.log(`Mmm tasty ${answer}\n`);
         answers["Food"] = answer;
 
@@ -29,7 +29,6 @@ rl.question(`\nOh hey, what's your name? `, (answer) => {
            rl.question(`What's your superpower? Even the smallest thing. `, (answer) => {
               console.log(`Bruh, ${answer}, you're clearly gifted. \n`);
               answers["Superpower"] = answer;
-                //console.log(answers);
               console.log(`Please wait while we generate your dope bio:\n`)
 
   setTimeout(() => console.log(`Based on our sweet analysis its safe to say that ${answers["Name"]} loves to get into the mood listening to ${answers["Music"]} while they're ${answers["Hobby"]}. 
